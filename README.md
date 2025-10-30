@@ -1,6 +1,8 @@
-# 👋 Hola, soy ElMaxter99
+# 👋 Hola, soy Alvaro !
 
 💻 Desarrollador Fullstack | 🚀 Apasionado por la automatización y la infraestructura
+
+<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300">
 
 ---
 
@@ -28,7 +30,9 @@
 
 ### 📫 Cómo contactarme
 - ✉️ [Correo](mailto:alvaroamorosperez@gmail.com)
-  
+
+---
+
 ## 👨🏻‍💻 Apps
 - 📝 [PDF Annotator](https://pdf-annotator-rho.vercel.app/)
 
