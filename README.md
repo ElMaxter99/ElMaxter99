@@ -1,12 +1,8 @@
-<!--
-**ElMaxter99/ElMaxter99** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
--->
-
 <div align="center">
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?size=28&duration=4000&color=67E8F9&center=true&vCenter=true&width=650&lines=Hola%2C+soy+Alvaro+%F0%9F%91%8B;Fullstack+Developer+%7C+DevOps+Enthusiast;Automation+and+Infrastructure+Lover)
 
-# 👋 Hola, soy **ElMaxter99**
+# 👋 Hola, soy **Álvaro Amorós**
 💻 Fullstack Developer · 🚀 Automation Fanatic · ☁️ Cloud & DevOps Explorer
 
 ![Profile Views](https://komarev.com/ghpvc/?username=ElMaxter99&color=1DA1F2&style=flat-square)
@@ -46,7 +42,7 @@
 | Proyecto | Descripción | Stack |
 | --- | --- | --- |
 | [PDF Annotator](https://pdf-annotator-rho.vercel.app/) | Anotador de PDF en tiempo real optimizado para productividad. | Angular · Node.js · Docker |
-| [DevOps Toolkit (WIP)](https://github.com/ElMaxter99) | Colección de pipelines y scripts reutilizables para despliegues automatizados. | GitHub Actions · Bash · IaC |
+
 
 > ✨ ¿Quieres ver más? Echa un ojo a mis repositorios fijados.
 
@@ -76,18 +72,18 @@
 ## 📫 Cómo contactarme
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-alvaroamorosperez%40gmail.com-D14836?logo=gmail&logoColor=white)](mailto:alvaroamorosperez@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alvaroamoros)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?logo=vercel&logoColor=white)](https://pdf-annotator-rho.vercel.app/)
+[![Email](https://img.shields.io/badge/Email-themaxter99%40gmail.com-D14836?logo=gmail&logoColor=white)](mailto:themaxter99@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alvaroamorosperez)
+<!-- [![Portfolio](https://img.shields.io/badge/Portfolio-000000?logo=vercel&logoColor=white)]() -->
 
 </div>
 
 ---
 
 ## 🎯 Fun Facts
-- ✈️ Siempre listo para nuevos retos tech, sin importar la zona horaria.
+
 - 🧠 Fan de las automatizaciones que ahorran horas repetitivas.
 - 🎮 Gamer casual buscando equilibrio entre código y diversión.
 
-¡Gracias por visitar mi perfil! Si te interesa colaborar o tienes una idea loca, **hablemos** 🚀
+¡Gracias por visitar mi perfil! Si tienes una idea loca, **hablemos** 🚀
 
