@@ -1,38 +1,89 @@
-# 👋 Hola, soy Alvaro !
+<div align="center">
 
-💻 Desarrollador Fullstack | 🚀 Apasionado por la automatización y la infraestructura
+![Typing SVG](https://readme-typing-svg.herokuapp.com?size=28&duration=4000&color=67E8F9&center=true&vCenter=true&width=650&lines=Hola%2C+soy+Alvaro+%F0%9F%91%8B;Fullstack+Developer+%7C+DevOps+Enthusiast;Automation+and+Infrastructure+Lover)
 
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300">
+# 👋 Hola, soy **Álvaro Amorós**
+💻 Fullstack Developer · 🚀 Automation Fanatic · ☁️ Cloud & DevOps Explorer
 
----
+![Profile Views](https://komarev.com/ghpvc/?username=ElMaxter99&color=1DA1F2&style=flat-square)
 
-### 🧠 Sobre mí
-- 🌐 Trabajo con **Node.js**, **Angular**, **MongoDB** y **Docker**
-- 🧩 Me encanta optimizar la arquitectura de APIs y automatizar despliegues
-- 🎯 Actualmente aprendiendo **DevOps**
+</div>
 
 ---
 
-### 🛠️ Tech Stack
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)
-![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+## 🧠 Sobre mí
+- 🌐 Experiencia construyendo APIs robustas con **Node.js**, **Express** y bases de datos **MongoDB**/**PostgreSQL**.
+- 🧩 Obsesionado con automatizar despliegues usando **Docker**, **CI/CD** y prácticas **DevOps** modernas.
+- 🔐 Enfocado en seguridad, pruebas automatizadas y buenas prácticas en arquitectura de software.
+- 📚 Aprendiendo en profundidad **infraestructura como código** y observabilidad avanzada.
 
 ---
 
-### 📊 Estadísticas
-![Stats](https://github-readme-stats.vercel.app/api?username=ElMaxter99&show_icons=true&theme=tokyonight)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ElMaxter99&layout=compact&theme=tokyonight)
+## 🔧 Tech Toolbox
+<div align="center">
+
+| Backend | Frontend | DevOps & Cloud | Databases | Testing & Utils |
+| --- | --- | --- | --- | --- |
+| ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white) | ![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) | ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white) | ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) | ![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white) ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=black) |
+
+</div>
 
 ---
 
-### 📫 Cómo contactarme
-- ✉️ [Correo](mailto:alvaroamorosperez@gmail.com)
+## 🚀 Qué estoy haciendo ahora
+- 🛠️ Construyendo microservicios escalables con pipelines automatizados.
+- ⚙️ Refinando infra en la nube con **Terraform** y contenedores orquestados.
+- 🧪 Diseñando suites de pruebas integrales para despliegues sin sorpresas.
 
 ---
 
-## 👨🏻‍💻 Apps
-- 📝 [PDF Annotator](https://pdf-annotator-rho.vercel.app/)
+## 🌟 Proyectos Destacados
+
+| Proyecto | Descripción | Stack |
+| --- | --- | --- |
+| [PDF Annotator](https://pdf-annotator-rho.vercel.app/) | Anotador de PDF en tiempo real optimizado para productividad. | Angular · Node.js · Docker |
+
+
+> ✨ ¿Quieres ver más? Echa un ojo a mis repositorios fijados.
+
+---
+
+## 📊 Métricas & Actividad
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ElMaxter99&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ElMaxter99&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=ElMaxter99&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D)
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ElMaxter99&theme=react-dark&hide_border=true&bg_color=0d1117)
+
+</div>
+
+---
+
+## 🧩 Recursos y Automatización
+- ⚡ Scripts listos para CI/CD y despliegue continuo en repos privados y públicos.
+- 📈 Dashboards para monitoreo de servicios y alertas proactivas.
+- 🧠 Documentación clara con diagramas y flujos para nuevos colaboradores.
+
+---
+
+## 📫 Cómo contactarme
+<div align="center">
+
+[![Email](https://img.shields.io/badge/Email-themaxter99%40gmail.com-D14836?logo=gmail&logoColor=white)](mailto:themaxter99@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alvaroamorosperez)
+<!-- [![Portfolio](https://img.shields.io/badge/Portfolio-000000?logo=vercel&logoColor=white)]() -->
+
+</div>
+
+---
+
+## 🎯 Fun Facts
+
+- 🧠 Fan de las automatizaciones que ahorran horas repetitivas.
+- 🎮 Gamer casual buscando equilibrio entre código y diversión.
+
+¡Gracias por visitar mi perfil! Si tienes una idea loca, **hablemos** 🚀
 
