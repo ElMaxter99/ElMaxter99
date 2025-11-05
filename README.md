@@ -42,7 +42,7 @@
 | Proyecto | Descripción | Stack |
 | --- | --- | --- |
 | [PDF Annotator](https://pdf-annotator-rho.vercel.app/) | Anotador de PDF en tiempo real optimizado para productividad. | Angular · Node.js · Docker |
-
+| [Castellón Comercio Notificator](https://castellon-comercio-notificator-fron.vercel.app/) | Plataforma web que muestra en un mapa los comercios adheridos al programa “Abonem Castelló 2025”, con filtros, histórico de cambios y estadísticas en tiempo real. | Angular · Node.js · Express · MongoDB · Docker |
 
 > ✨ ¿Quieres ver más? Echa un ojo a mis repositorios fijados.
 
@@ -53,8 +53,6 @@
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ElMaxter99&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ElMaxter99&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=ElMaxter99&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D)
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ElMaxter99&theme=react-dark&hide_border=true&bg_color=0d1117)
 
