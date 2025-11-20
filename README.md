@@ -41,8 +41,9 @@
 
 | Proyecto | Descripción | Stack |
 | --- | --- | --- |
-| [PDF Annotator](https://pdf-annotator-rho.vercel.app/) | Anotador de PDF en tiempo real optimizado para productividad. | Angular · Node.js · Docker |
-| [Castellón Comercio Notificator](https://castellon-comercio-notificator-fron.vercel.app/) | Plataforma web que muestra en un mapa los comercios adheridos al programa “Abonem Castelló 2025”, con filtros, histórico de cambios y estadísticas en tiempo real. | Angular · Node.js · Express · MongoDB · Docker |
+| [PDF Annotator 📓✏️](https://pdf-annotator-rho.vercel.app/) | Anotador de PDF en tiempo real optimizado para productividad. | Angular · Node.js · Docker |
+| [Castellón Comercio Notificator 🏪🚩](https://castellon-comercio-notificator-fron.vercel.app/) | Plataforma web que muestra en un mapa los comercios adheridos al programa “Abonem Castelló 2025”, con filtros, histórico de cambios y estadísticas en tiempo real. | Angular · Node.js · Express · MongoDB · Docker |
+| [Gasolina Radar ⛽💸](https://web.gasolinaradar.es/) | Gasolina Radar es un proyecto de Front y Back. El objetivo es mostrar la información del precio de las gasolineras cercanas. | Angular · Node.js · Express · MongoDB · Redis · RabbitMQ · Docker |
 
 > ✨ ¿Quieres ver más? Echa un ojo a mis repositorios fijados.
 
