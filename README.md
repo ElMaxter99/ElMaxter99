@@ -36,6 +36,4 @@
 | [Server Space Monitor s💻🛰️](https://github.com/ElMaxter99/server-space-monitor) | Proyecto para tener alertas sobre el espacio en disco de tu servidor | Node.js · Express · Nodemailer · Docker |
 | [Gasolina Radar ⛽💸](https://web.gasolinaradar.es/) | Gasolina Radar es un proyecto de Front y Back. El objetivo es mostrar la información del precio de las gasolineras cercanas. | Angular · Node.js · Express · MongoDB · Redis · RabbitMQ · Docker |
 
-> ✨ ¿Quieres ver más? Echa un ojo a mis repositorios fijados.
-
 ---
