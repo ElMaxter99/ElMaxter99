@@ -9,16 +9,6 @@
 
 </div>
 
----
-
-## 🧠 Sobre mí
-- 🌐 Experiencia construyendo APIs robustas con **Node.js**, **Express** y bases de datos **MongoDB**/**PostgreSQL**.
-- 🧩 Obsesionado con automatizar despliegues usando **Docker**, **CI/CD** y prácticas **DevOps** modernas.
-- 🔐 Enfocado en seguridad, pruebas automatizadas y buenas prácticas en arquitectura de software.
-- 📚 Aprendiendo en profundidad **infraestructura como código** y observabilidad avanzada.
-
----
-
 ## 🔧 Tech Toolbox
 <div align="center">
 
@@ -49,41 +39,3 @@
 > ✨ ¿Quieres ver más? Echa un ojo a mis repositorios fijados.
 
 ---
-
-## 📊 Métricas & Actividad
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ElMaxter99&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ElMaxter99&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117)
-
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ElMaxter99&theme=react-dark&hide_border=true&bg_color=0d1117)
-
-</div>
-
----
-
-## 🧩 Recursos y Automatización
-- ⚡ Scripts listos para CI/CD y despliegue continuo en repos privados y públicos.
-- 📈 Dashboards para monitoreo de servicios y alertas proactivas.
-- 🧠 Documentación clara con diagramas y flujos para nuevos colaboradores.
-
----
-
-## 📫 Cómo contactarme
-<div align="center">
-
-[![Email](https://img.shields.io/badge/Email-themaxter99%40gmail.com-D14836?logo=gmail&logoColor=white)](mailto:themaxter99@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alvaroamorosperez)
-<!-- [![Portfolio](https://img.shields.io/badge/Portfolio-000000?logo=vercel&logoColor=white)]() -->
-
-</div>
-
----
-
-## 🎯 Fun Facts
-
-- 🧠 Fan de las automatizaciones que ahorran horas repetitivas.
-- 🎮 Gamer casual buscando equilibrio entre código y diversión.
-
-¡Gracias por visitar mi perfil! Si tienes una idea loca, **hablemos** 🚀
-
