@@ -2,7 +2,6 @@
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?size=28&duration=4000&color=67E8F9&center=true&vCenter=true&width=650&lines=Hola%2C+soy+Alvaro+%F0%9F%91%8B;Fullstack+Developer+%7C+DevOps+Enthusiast;Automation+and+Infrastructure+Lover)
 
-# 👋 Hola, soy **Álvaro Amorós**
 💻 Fullstack Developer · 🚀 Automation Fanatic · ☁️ Cloud & DevOps Explorer
 
 ![Profile Views](https://komarev.com/ghpvc/?username=ElMaxter99&color=1DA1F2&style=flat-square)
