@@ -33,6 +33,6 @@
 | [PDF Annotator 📓✏️](https://pdf-annotator-rho.vercel.app/) | Anotador de PDF en tiempo real optimizado para productividad. | Angular · Node.js · Docker |
 | [Castellón Comercio Notificator 🏪🚩](https://castellon-comercio-notificator-fron.vercel.app/) | Plataforma web que muestra en un mapa los comercios adheridos al programa “Abonem Castelló 2025”, con filtros, histórico de cambios y estadísticas en tiempo real. | Angular · Node.js · Express · MongoDB · Docker |
 | [Server Space Monitor s💻🛰️](https://github.com/ElMaxter99/server-space-monitor) | Proyecto para tener alertas sobre el espacio en disco de tu servidor | Node.js · Express · Nodemailer · Docker |
-| [Gasolina Radar ⛽💸](https://web.gasolinaradar.es/) | Gasolina Radar es un proyecto de Front y Back. El objetivo es mostrar la información del precio de las gasolineras cercanas. | Angular · Node.js · Express · MongoDB · Redis · RabbitMQ · Docker |
+| [Gasolina Radar ⛽💸](https://app.gasolinaradar.es/) | Gasolina Radar es un proyecto de Front y Back. El objetivo es mostrar la información del precio de las gasolineras cercanas. Desarrollado para Desktop y movil | Angular · Node.js · Express · MongoDB · Redis · RabbitMQ · Docker |
 
 ---
