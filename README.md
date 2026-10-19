@@ -44,6 +44,22 @@ Desarrollador fullstack de **Castellón (España)** al que le gusta automatizar 
 | [Castellón Comercio Notificator 🏪🚩](https://castellon-comercio-notificator-fron.vercel.app/) | Mapa de los comercios adheridos a “Abonem Castelló 2025”, con filtros, histórico de cambios y estadísticas en tiempo real. | Angular · Node.js · Express · MongoDB · Docker |
 | [Server Space Monitor 💻🛰️](https://github.com/ElMaxter99/server-space-monitor) | Alertas por email sobre el espacio en disco de tu servidor. | Node.js · Express · Nodemailer · Docker |
 | [Gasolina Radar ⛽💸](https://app.gasolinaradar.es/) | Precios de las gasolineras cercanas, para escritorio y móvil. | Angular · Node.js · Express · MongoDB · Redis · RabbitMQ · Docker |
+| [Subasta Salvaje 🎪🪙](https://subasta-salvaje.vercel.app) ([código](https://github.com/ElMaxter99/subasta-salvaje)) | Juego de subastas creativas multijugador: una TV muestra la puja, el anfitrión la dirige y los jugadores pujan desde el móvil. Diseñado y desarrollado con asistencia de IA (Claude Code). | Next.js · TypeScript · Supabase (Postgres) · Tailwind · Vitest · Playwright · Vercel |
+
+---
+
+## 🤖 Desarrollo con IA
+Uso la IA (principalmente **Claude Code**) como herramienta de diseño y desarrollo de extremo a extremo, siempre dirigiendo yo el producto: defino qué se construye y por qué, reviso lo que se genera, pruebo el resultado y decido qué se despliega.
+
+**Caso de estudio: [Subasta Salvaje](https://github.com/ElMaxter99/subasta-salvaje)** — juego web de subastas creativas multijugador ([demo](https://subasta-salvaje.vercel.app)).
+- 🎨 **Diseño de producto y UX con IA:** pantalla de TV, panel de anfitrión y vista de móvil para jugadores, modo espectador, accesibilidad móvil, identidad de marca y mascota, e imágenes para compartir (podio).
+- 🧱 **Arquitectura revisada y documentada:** reglas de negocio y dinero en funciones SQL con idempotencia, la app solo valida, autentica y presenta; migraciones versionadas con permisos separados.
+- ✅ **Calidad con pruebas automáticas:** cientos de tests unitarios y de integración (Vitest) y flujos de extremo a extremo (Playwright), además de auditoría de seguridad, prueba de carga y revisión de accesibilidad.
+- 🧑‍🤝‍🧑 **Trabajo con varios agentes en paralelo:** reparto de tareas por áreas en ramas separadas, integración y verificación del conjunto.
+- 📚 **Documentación viva:** guía de arquitectura, decisiones, reglas de juego, privacidad y créditos, mantenida junto al código.
+- 🔒 **Uso responsable de la IA:** límites de coste (solo proveedores gratuitos), sin secretos en el repositorio y honestidad sobre lo no probado en producción.
+
+> El código lo genera la IA bajo mi dirección y revisión; la responsabilidad del producto, las pruebas y los despliegues es mía.
 
 ---
 
