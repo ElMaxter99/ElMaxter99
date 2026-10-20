@@ -7,7 +7,7 @@
 [![Email](https://img.shields.io/badge/Email-themaxter99@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:themaxter99@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-ElMaxter99-181717?style=for-the-badge&logo=github)](https://github.com/ElMaxter99)
 
-[Perfil](#-perfil) · [Skills](#-skills) · [Proyectos](#-proyectos) · [Otros repos](#-más-código) · [Estadísticas](#-actividad)
+[Perfil](#-perfil) · [Skills](#-skills) · [Proyectos](#-proyectos) · [IA](#-desarrollo-con-ia) · [Otros repos](#-más-código) · [Estadísticas](#-actividad)
 
 </div>
 
@@ -102,7 +102,23 @@ flowchart LR
 Dos ediciones en una sola web: **2025** (demo con datos de ejemplo) y **2026** (renovada). Ver [`docs/EDITIONS.md`](https://github.com/ElMaxter99/castellon-comercio-notificator-front/blob/develop/docs/EDITIONS.md).
 </details>
 
-`Angular 20` `TypeScript` `Leaflet` `Node.js` `Express` `Redis` `MongoDB` `GitHub Actions` `Vercel`
+`Angular 20` `TypeScript` `Leaflet` `Node.js` `Express` `Redis` `GitHub Actions` `Vercel` `Render`
+
+---
+
+### 🎪 Subasta Salvaje
+**Juego de subastas creativas multijugador para noches de juegos.** Una TV muestra la puja, el anfitrión la dirige y los jugadores pujan desde el móvil mientras la imagen base se transforma con lo que ganan. Diseñado y desarrollado con asistencia de IA ([más abajo](#-desarrollo-con-ia)).
+
+[![Demo](https://img.shields.io/badge/🌐_Demo-subasta--salvaje.vercel.app-FBBF24?style=for-the-badge)](https://subasta-salvaje.vercel.app)
+[![Código](https://img.shields.io/badge/Código-subasta--salvaje-181717?style=for-the-badge&logo=github)](https://github.com/ElMaxter99/subasta-salvaje)
+
+<p align="center"><img src="assets/subasta-salvaje-desktop.jpg" alt="Pantalla de inicio de Subasta Salvaje" width="85%"></p>
+
+- 📺 Tres vistas: pantalla de TV, panel de anfitrión y móvil para jugadores, con modo espectador.
+- 🧱 Reglas de negocio y dinero en funciones SQL con idempotencia; la app valida, autentica y presenta.
+- ✅ Tests unitarios y de integración (Vitest) y flujos extremo a extremo (Playwright).
+
+`Next.js` `TypeScript` `Supabase (Postgres)` `Tailwind` `Vitest` `Playwright` `Vercel`
 
 ---
 
@@ -185,13 +201,32 @@ cron.schedule(cronExpr, async () => {
 
 ---
 
+## 🤖 Desarrollo con IA
+Uso la IA (principalmente **Claude Code**) como herramienta de diseño y desarrollo de extremo a extremo, siempre dirigiendo yo el producto: defino qué se construye y por qué, reviso lo que se genera, pruebo el resultado y decido qué se despliega.
+
+**Caso de estudio: [Subasta Salvaje](https://github.com/ElMaxter99/subasta-salvaje)** — juego web de subastas creativas multijugador ([demo](https://subasta-salvaje.vercel.app)).
+- 🎨 **Diseño de producto y UX con IA:** pantalla de TV, panel de anfitrión y vista de móvil para jugadores, modo espectador, accesibilidad móvil, identidad de marca y mascota, e imágenes para compartir (podio).
+- 🧱 **Arquitectura revisada y documentada:** reglas de negocio y dinero en funciones SQL con idempotencia, la app solo valida, autentica y presenta; migraciones versionadas con permisos separados.
+- ✅ **Calidad con pruebas automáticas:** cientos de tests unitarios y de integración (Vitest) y flujos de extremo a extremo (Playwright), además de auditoría de seguridad, prueba de carga y revisión de accesibilidad.
+- 🧑‍🤝‍🧑 **Trabajo con varios agentes en paralelo:** reparto de tareas por áreas en ramas separadas, integración y verificación del conjunto.
+- 📚 **Documentación viva:** guía de arquitectura, decisiones, reglas de juego, privacidad y créditos, mantenida junto al código.
+- 🔒 **Uso responsable de la IA:** límites de coste (solo proveedores gratuitos), sin secretos en el repositorio y honestidad sobre lo no probado en producción.
+
+**Otro ejemplo: [Castellón Comercio](https://bono-castellon.alvaromaxter.es/)** ([front](https://github.com/ElMaxter99/castellon-comercio-notificator-front) · [API](https://github.com/ElMaxter99/castellon-comercio-notificator-api)) — la evolución 2026 del proyecto, rediseñada con asistencia de IA (Claude Code): nuevas vistas y mapa con clústeres, scraper adaptado a la web oficial, hosting gratuito, documentación completa (incluida una guía para la propia IA) y capturas del README con datos ficticios.
+
+**Y también: [PDF Annotator](https://github.com/ElMaxter99/pdf-annotator)** — auditoría y refactor asistidos con Claude Code: corrección de una vulnerabilidad de ejecución de código en el editor JSON (parser seguro con tests), cabeceras de seguridad en NGINX, rediseño responsive del espacio de trabajo, atajos de teclado, documentación completa (README con capturas, guía de arquitectura y `AGENTS.md`/`CLAUDE.md` para agentes) y revisión por pull request.
+
+> El código lo genera la IA bajo mi dirección y revisión; la responsabilidad del producto, las pruebas y los despliegues es mía.
+
+---
+
 ## 📦 Más código
 
 Otros repositorios públicos:
 
 | Repo | |
 | --- | --- |
-| [`pugIDE`](https://github.com/ElMaxter99/pugIDE) · [`ies-effort-calculator`](https://github.com/ElMaxter99/ies-effort-calculator) · [`subasta-salvaje-public`](https://github.com/ElMaxter99/subasta-salvaje-public) | Herramientas y apps web |
+| [`pugIDE`](https://github.com/ElMaxter99/pugIDE) · [`ies-effort-calculator`](https://github.com/ElMaxter99/ies-effort-calculator) | Herramientas y apps web |
 | [`bank-statement-parser`](https://github.com/ElMaxter99/bank-statement-parser) · [`bank-importer-santander`](https://github.com/ElMaxter99/bank-importer-santander) · [`csv-rule-validator`](https://github.com/ElMaxter99/csv-rule-validator) | Parseo y validación de datos |
 | [`gym-app-gateway`](https://github.com/ElMaxter99/gym-app-gateway) · [`gym-app-auth-service`](https://github.com/ElMaxter99/gym-app-auth-service) | Microservicios (gateway y autenticación) |
 | [`mass-font-downloader`](https://github.com/ElMaxter99/mass-font-downloader) · [`nfc-inventory-web`](https://github.com/ElMaxter99/nfc-inventory-web) · [`mongo-example`](https://github.com/ElMaxter99/mongo-example) | Utilidades y ejemplos |
