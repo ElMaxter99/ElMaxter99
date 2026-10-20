@@ -41,7 +41,7 @@ Desarrollador fullstack de **Castellón (España)** al que le gusta automatizar 
 | Proyecto | Descripción | Stack |
 | --- | --- | --- |
 | [PDF Annotator 📓✏️](https://pdf-annotator-rho.vercel.app/) | Anotador de PDF en tiempo real optimizado para productividad. | Angular · Node.js · Docker |
-| [Castellón Comercio Notificator 🏪🚩](https://castellon-comercio-notificator-fron.vercel.app/) | Mapa de los comercios adheridos a “Abonem Castelló 2025”, con filtros, histórico de cambios y estadísticas en tiempo real. | Angular · Node.js · Express · MongoDB · Docker |
+| [Castellón Comercio 🏪🚩](https://bono-castellon.alvaromaxter.es/) ([alternativa](https://castellon-comercio-notificator-fron.vercel.app/)) · código: [front](https://github.com/ElMaxter99/castellon-comercio-notificator-front) · [API](https://github.com/ElMaxter99/castellon-comercio-notificator-api) | Comercios adheridos a “Abonem Castelló”, con la edición 2026 renovada (buscador, lista por sector, mapa con clústeres, favoritos y novedades de altas y bajas) y la 2025 en modo demo. Un API vigila la web oficial cada 5 minutos, guarda el histórico y avisa por correo. | Angular 20 · Leaflet · Node.js · Express · Redis · Docker · Vercel · Render |
 | [Server Space Monitor 💻🛰️](https://github.com/ElMaxter99/server-space-monitor) | Alertas por email sobre el espacio en disco de tu servidor. | Node.js · Express · Nodemailer · Docker |
 | [Gasolina Radar ⛽💸](https://app.gasolinaradar.es/) | Precios de las gasolineras cercanas, para escritorio y móvil. | Angular · Node.js · Express · MongoDB · Redis · RabbitMQ · Docker |
 | [Subasta Salvaje 🎪🪙](https://subasta-salvaje.vercel.app) ([código](https://github.com/ElMaxter99/subasta-salvaje)) | Juego de subastas creativas multijugador: una TV muestra la puja, el anfitrión la dirige y los jugadores pujan desde el móvil. Diseñado y desarrollado con asistencia de IA (Claude Code). | Next.js · TypeScript · Supabase (Postgres) · Tailwind · Vitest · Playwright · Vercel |
@@ -58,6 +58,8 @@ Uso la IA (principalmente **Claude Code**) como herramienta de diseño y desarro
 - 🧑‍🤝‍🧑 **Trabajo con varios agentes en paralelo:** reparto de tareas por áreas en ramas separadas, integración y verificación del conjunto.
 - 📚 **Documentación viva:** guía de arquitectura, decisiones, reglas de juego, privacidad y créditos, mantenida junto al código.
 - 🔒 **Uso responsable de la IA:** límites de coste (solo proveedores gratuitos), sin secretos en el repositorio y honestidad sobre lo no probado en producción.
+
+**Otro ejemplo: [Castellón Comercio](https://bono-castellon.alvaromaxter.es/)** ([front](https://github.com/ElMaxter99/castellon-comercio-notificator-front) · [API](https://github.com/ElMaxter99/castellon-comercio-notificator-api)) — la evolución 2026 del proyecto, rediseñada con asistencia de IA (Claude Code): nuevas vistas y mapa con clústeres, scraper adaptado a la web oficial, hosting gratuito, documentación completa (incluida una guía para la propia IA) y capturas del README con datos ficticios.
 
 > El código lo genera la IA bajo mi dirección y revisión; la responsabilidad del producto, las pruebas y los despliegues es mía.
 
