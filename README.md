@@ -46,9 +46,11 @@ Desarrollador **fullstack** con foco en producto: construyo aplicaciones complet
 ## 🚀 Proyectos
 
 ### ⛽ GasolinaRadar
-**Precios de combustible y puntos de carga EV cerca de ti, en un mapa.** Comparas gasolineras por precio, filtras por combustible, conectores o servicios, y consultas estadísticas y viajes. Pensada para escritorio y móvil.
+**Una plataforma que integra fuentes de datos de combustible y carga eléctrica —públicas y no públicas— en un único modelo normalizado.** Nació con una idea ambiciosa: abarcar todo el ciclo de un producto real —ingesta de datos, librerías reutilizables, backend, apps, despliegue y escalabilidad— y no quedarse en "una app con un mapa".
 
 [![Abrir app](https://img.shields.io/badge/🌐_Abrir_app-app.gasolinaradar.es-1D4ED8?style=for-the-badge)](https://app.gasolinaradar.es/)
+[![Organización](https://img.shields.io/badge/GitHub-gasolinaradar-181717?style=for-the-badge&logo=github)](https://github.com/gasolinaradar)
+[![Collectors](https://img.shields.io/badge/Código-collectors-181717?style=for-the-badge&logo=github)](https://github.com/gasolinaradar/collectors)
 
 <table>
   <tr>
@@ -57,14 +59,86 @@ Desarrollador **fullstack** con foco en producto: construyo aplicaciones complet
   </tr>
 </table>
 
+**Qué ve el usuario**
 - 🗺️ Mapa con **clústeres** y precio de gasolina 95 / gasóleo sobre cada estación.
 - 🔌 Puntos de carga EV con conectores, potencia (kW) y estado (libre / en uso).
 - 🎛️ Filtros por combustible, servicios (tienda, lavadero, cafetería) y "cerca de mí".
-- 📊 Ranking de rentabilidad, estadísticas y viajes.
+- 📊 Ranking de rentabilidad, estadísticas y viajes. Escritorio y móvil.
 
-`Angular` `Node.js` `Express` `MongoDB` `Redis` `RabbitMQ` `Docker` `Leaflet`
+**Qué hay detrás: una organización propia de librerías**
 
-> 🔒 El código de este proyecto es privado; la demo es pública.
+Cada fuente de datos tiene su **propio paquete npm** (MIT) en la organización [`@gasolinaradar`](https://github.com/gasolinaradar), con un contrato común: todos devuelven estaciones normalizadas con la misma forma. Un paquete agregador las reexporta, de modo que el backend depende de **una sola librería** en vez de una por fuente.
+
+| Fuente | Qué aporta | Librería |
+| --- | --- | --- |
+| 🇪🇸 MITERD | Dataset oficial de precios de carburantes de España | [`miterd-collector`](https://github.com/gasolinaradar/miterd-collector) |
+| 🇵🇹 DGEG | Dataset oficial de Portugal (con enriquecido por detalle) | [`dgeg-collector`](https://github.com/gasolinaradar/dgeg-collector) |
+| 🇦🇩 Govern d'Andorra | Servicio oficial de precios (ArcGIS) | [`andorra-collector`](https://github.com/gasolinaradar/andorra-collector) |
+| 🔌 DGT | Puntos de recarga EV oficiales (XML DATE X2 leído en streaming) | [`dgtEv-collector`](https://github.com/gasolinaradar/dgtEv-collector) |
+| 🔌 OpenChargeMap | Puntos de carga EV en España (API v3, con reintentos y backoff) | [`ocm-collector`](https://github.com/gasolinaradar/ocm-collector) |
+| ⛽ Repsol | Buscador de estaciones (no es un dataset público) | [`repsol-collector`](https://github.com/gasolinaradar/repsol-collector) |
+| ⛽ Plenergy | Listado público y scraping de la ficha cuando faltan precios | [`plenergy-collector`](https://github.com/gasolinaradar/plenergy-collector) |
+| ⛽ BonÀrea | Localizador de estaciones con precios, servicios y horarios | [`bonarea-collector`](https://github.com/gasolinaradar/bonarea-collector) |
+| 🏍️ Catálogo de motos | Fichas curadas de fabricante (depósito, consumo) para dar de alta vehículos | [`vehicle-catalog`](https://github.com/gasolinaradar/vehicle-catalog) |
+
+El aspecto más interesante: **cruzar fuentes**. Una estación del dataset oficial (completo pero con datos básicos) se compara con la misma estación en la web de la marca (con horarios y servicios) usando proximidad geográfica y similitud de nombre y dirección, con una confianza de 0 a 100. Después se **rellenan los huecos sin pisar nunca un dato que ya existe**.
+
+<details>
+<summary><b>🧪 Ejemplo de código</b> · <a href="https://github.com/gasolinaradar/collectors"><code>@gasolinaradar/collectors</code></a></summary>
+
+```js
+const { miterd, plenergy, matching } = require('@gasolinaradar/collectors');
+
+const oficiales = await miterd.createMiterdCollector({ logger }).fetch({ reportProgress });
+const marca = await plenergy.createPlenergyCollector({ logger }).fetch({ reportProgress });
+
+// Cruza ambas fuentes y rellena los campos vacíos de la fuente primaria
+const enriquecidas = matching.enrichStations([...oficiales, ...marca], {
+  primarySource: 'miterd',
+});
+// cada entrada indica qué collectors han contribuido (`sources`)
+```
+
+Contrato común de estación, igual para todas las fuentes:
+
+```js
+{
+  source, country, sourceStationId,
+  name, address, municipality, province, postalCode,
+  schedule, services,
+  location: { type: 'Point', coordinates: [lon, lat] },
+  prices, lastUpdated
+}
+```
+</details>
+
+<details>
+<summary><b>🧭 Arquitectura</b></summary>
+
+```mermaid
+flowchart LR
+    subgraph fuentes[Fuentes de datos]
+      F1[Oficiales<br/>MITERD · DGEG · DGT · Andorra]
+      F2[Marcas y comunidad<br/>Repsol · Plenergy · BonÀrea · OCM]
+    end
+    F1 & F2 --> L["📦 @gasolinaradar/collectors<br/>normalización · matching · enriquecido"]
+    L -->|estaciones normalizadas| API["⚙️ API<br/>Node · Express · Redis · JWT"]
+    API --> DB[("🍃 MongoDB<br/>una base por entorno")]
+    API -->|REST| APP["📱 App<br/>Angular · Capacitor"]
+    API -->|REST| ADM["🛠️ Panel de administración"]
+```
+
+Principios del diseño:
+- **El API es el centro:** todo entra y sale por él; ningún collector escribe en la base de datos.
+- **Collectors finos:** cada uno conoce una sola fuente (acceso y parseo). La persistencia y las reglas de negocio no son suyas.
+- **Contratos explícitos:** un cambio en el formato de los datos obliga a tocar collector, agregador y API a la vez.
+- **Base de datos desacoplada**, con una base lógica por entorno (test, producción y local).
+- **Documentación y ADRs** para dejar por escrito el porqué de cada decisión.
+</details>
+
+`Angular` `Capacitor` `Node.js` `Express` `MongoDB` `Redis` `RabbitMQ` `npm` `Docker` `Leaflet`
+
+> 🔒 La API y las apps son privadas; las librerías de ingesta son públicas y publicadas en npm.
 
 ---
 
@@ -107,7 +181,9 @@ Dos ediciones en una sola web: **2025** (demo con datos de ejemplo) y **2026** (
 ---
 
 ### 🎪 Subasta Salvaje
-**Juego de subastas creativas multijugador para noches de juegos.** Una TV muestra la puja, el anfitrión la dirige y los jugadores pujan desde el móvil mientras la imagen base se transforma con lo que ganan. Diseñado y desarrollado con asistencia de IA ([más abajo](#-desarrollo-con-ia)).
+**Juego de subastas creativas multijugador para noches de juegos.** Una TV muestra la puja, el anfitrión la dirige y los jugadores pujan desde el móvil mientras la imagen base se transforma con lo que ganan. 
+
+> 🎯 **Por qué existe:** es un juego propio para cuando vienen los amigos a casa: ver quién construye la casa más divertida. Y una buena excusa para plantear una **app entera con *vibe coding***, de la idea al despliegue ([cómo lo hice](#-desarrollo-con-ia)).
 
 [![Demo](https://img.shields.io/badge/🌐_Demo-subasta--salvaje.vercel.app-FBBF24?style=for-the-badge)](https://subasta-salvaje.vercel.app)
 [![Código](https://img.shields.io/badge/Código-subasta--salvaje-181717?style=for-the-badge&logo=github)](https://github.com/ElMaxter99/subasta-salvaje)
@@ -124,6 +200,8 @@ Dos ediciones en una sola web: **2025** (demo con datos de ejemplo) y **2026** (
 
 ### 📓 PDF Annotator
 **Marca cualquier PDF, obtén las coordenadas exactas en JSON y exporta el documento anotado.** Todo ocurre en el navegador: ningún archivo se sube a un servidor.
+
+> 🎯 **Por qué existe:** en algunos proyectos privados tenía que maquetar coordenadas a mano para rellenar PDFs con Hummus y Muhammara. Esta herramienta me quita esa faena: haces clic, copias el JSON y listo.
 
 [![Demo](https://img.shields.io/badge/🌐_Demo-pdf--annotator-4DD9C0?style=for-the-badge)](https://pdf-annotator-rho.vercel.app/)
 [![Código](https://img.shields.io/badge/Código-pdf--annotator-181717?style=for-the-badge&logo=github)](https://github.com/ElMaxter99/pdf-annotator)
