@@ -40,7 +40,7 @@ Desarrollador fullstack de **Castellón (España)** al que le gusta automatizar 
 
 | Proyecto | Descripción | Stack |
 | --- | --- | --- |
-| [PDF Annotator 📓✏️](https://pdf-annotator-rho.vercel.app/) | Anotador de PDF en tiempo real optimizado para productividad. | Angular · Node.js · Docker |
+| [PDF Annotator 📓✏️](https://pdf-annotator-rho.vercel.app/) ([código](https://github.com/ElMaxter99/pdf-annotator)) | Editor visual de coordenadas sobre PDFs: haz clic donde va cada dato, obtén su posición exacta en JSON y exporta el PDF anotado. Todo en el navegador (el PDF no se sube a ningún servidor), con guías y *snapping*, plantillas reutilizables, atajos de teclado, 7 idiomas, tema claro/oscuro y diseño responsive. Código abierto (MIT). | Angular 20 · TypeScript · pdf.js · pdf-lib · Docker · NGINX · Vercel |
 | [Castellón Comercio 🏪🚩](https://bono-castellon.alvaromaxter.es/) ([alternativa](https://castellon-comercio-notificator-fron.vercel.app/)) · código: [front](https://github.com/ElMaxter99/castellon-comercio-notificator-front) · [API](https://github.com/ElMaxter99/castellon-comercio-notificator-api) | Comercios adheridos a “Abonem Castelló”, con la edición 2026 renovada (buscador, lista por sector, mapa con clústeres, favoritos y novedades de altas y bajas) y la 2025 en modo demo. Un API vigila la web oficial cada 5 minutos, guarda el histórico y avisa por correo. | Angular 20 · Leaflet · Node.js · Express · Redis · Docker · Vercel · Render |
 | [Server Space Monitor 💻🛰️](https://github.com/ElMaxter99/server-space-monitor) | Alertas por email sobre el espacio en disco de tu servidor. | Node.js · Express · Nodemailer · Docker |
 | [Gasolina Radar ⛽💸](https://app.gasolinaradar.es/) | Precios de las gasolineras cercanas, para escritorio y móvil. | Angular · Node.js · Express · MongoDB · Redis · RabbitMQ · Docker |
@@ -60,6 +60,8 @@ Uso la IA (principalmente **Claude Code**) como herramienta de diseño y desarro
 - 🔒 **Uso responsable de la IA:** límites de coste (solo proveedores gratuitos), sin secretos en el repositorio y honestidad sobre lo no probado en producción.
 
 **Otro ejemplo: [Castellón Comercio](https://bono-castellon.alvaromaxter.es/)** ([front](https://github.com/ElMaxter99/castellon-comercio-notificator-front) · [API](https://github.com/ElMaxter99/castellon-comercio-notificator-api)) — la evolución 2026 del proyecto, rediseñada con asistencia de IA (Claude Code): nuevas vistas y mapa con clústeres, scraper adaptado a la web oficial, hosting gratuito, documentación completa (incluida una guía para la propia IA) y capturas del README con datos ficticios.
+
+**Y también: [PDF Annotator](https://github.com/ElMaxter99/pdf-annotator)** — auditoría y refactor asistidos con Claude Code: corrección de una vulnerabilidad de ejecución de código en el editor JSON (parser seguro con tests), cabeceras de seguridad en NGINX, rediseño responsive del espacio de trabajo, atajos de teclado, documentación completa (README con capturas, guía de arquitectura y `AGENTS.md`/`CLAUDE.md` para agentes) y revisión por pull request.
 
 > El código lo genera la IA bajo mi dirección y revisión; la responsabilidad del producto, las pruebas y los despliegues es mía.
 
